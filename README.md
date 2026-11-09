@@ -36,7 +36,9 @@ As ferramentas aceitam acentos e sinônimos de status, convertem o vencimento do
 python -m unittest discover -s tests -v
 ```
 
-Os testes locais usam um quadro simulado e cobrem criação, filtro, movimentação, validação e tratamento de erro. A execução ponta a ponta requer Gemini e Trello configurados. Para verificar, peça um card fictício no ADK, confirme a criação, liste o quadro, mova o card para Concluído e confira as duas interfaces. Use um quadro de laboratório para essa demonstração.
+Os cinco testes locais usam um quadro simulado e cobrem criação, filtro, movimentação, validação e tratamento de erro. A integração também foi validada com Gemini 3.1 Flash-Lite, Google ADK e um quadro real do Trello. Veja o [registro da validação](evidencias/validacao.md).
+
+Para reproduzir o fluxo, peça um card fictício no ADK, confirme a criação, liste o quadro, mova o card para Concluído e confira as duas interfaces. Use um quadro de laboratório para a demonstração.
 
 - [Configuração do ADK](https://adk.dev/get-started/python/)
 - [Configuração da API do Trello](https://support.atlassian.com/trello/docs/getting-started-with-trello-rest-api/)

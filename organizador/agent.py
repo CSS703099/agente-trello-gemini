@@ -9,7 +9,7 @@ load_dotenv()
 
 root_agent = Agent(
     name="organizador_trello",
-    model=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+    model=os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite"),
     description="Planeja o dia e organiza tarefas em um quadro Trello configurado.",
     instruction=(
         "Responda em português do Brasil. Na abertura consulte data_de_hoje e pergunte quais "
