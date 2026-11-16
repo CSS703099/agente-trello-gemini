@@ -42,3 +42,9 @@ Para reproduzir o fluxo, peça um card fictício no ADK, confirme a criação, l
 
 - [Configuração do ADK](https://adk.dev/get-started/python/)
 - [Configuração da API do Trello](https://support.atlassian.com/trello/docs/getting-started-with-trello-rest-api/)
+
+## Limites da demonstração
+
+A confirmação antes de criar ou mover cards é uma instrução conversacional do agente. As funções de escrita não exigem um comprovante de aprovação validado no código. Esse comportamento não equivale a uma barreira técnica de autorização.
+
+O protótipo usa um quadro de laboratório. Antes de uso operacional, implementar aprovação verificável na camada de ferramentas e idempotência para evitar criação duplicada após falhas de resposta; ampliar testes com instruções maliciosas em títulos e descrições. A validação registrada demonstra um fluxo específico, sem garantir todos os comportamentos do modelo.
