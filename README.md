@@ -48,3 +48,9 @@ Para reproduzir o fluxo, peça um card fictício no ADK, confirme a criação, l
 A confirmação antes de criar ou mover cards é uma instrução conversacional do agente. As funções de escrita não exigem um comprovante de aprovação validado no código. Esse comportamento não equivale a uma barreira técnica de autorização.
 
 O protótipo usa um quadro de laboratório. Antes de uso operacional, implementar aprovação verificável na camada de ferramentas e idempotência para evitar criação duplicada após falhas de resposta; ampliar testes com instruções maliciosas em títulos e descrições. A validação registrada demonstra um fluxo específico, sem garantir todos os comportamentos do modelo.
+
+## Validação automática no GitHub
+
+[![Testes](https://github.com/CSS703099/agente-trello-gemini/actions/workflows/tests.yml/badge.svg)](https://github.com/CSS703099/agente-trello-gemini/actions/workflows/tests.yml)
+
+**5 testes aprovados** no Python 3.13 em runner Linux, na [execução 43984766106](https://github.com/CSS703099/agente-trello-gemini/actions/runs/43984766106), commit `7f4e5d7239d2658f075957e6e1f70cd31b2b9c8b`. A suíte substitui o quadro por objetos simulados e verifica criação, filtro, movimentação, validação e erros. Não chama Gemini nem Trello e não substitui a demonstração da integração real.
